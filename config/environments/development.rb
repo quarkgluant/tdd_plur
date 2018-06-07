@@ -12,6 +12,13 @@ Rails.application.configure do
   # Show full error reports.
   config.consider_all_requests_local = true
 
+  console do
+    # this block is called only when running console,
+    # so we can safely require pry here
+    require 'pry'
+    config.console = Pry
+  end
+
   # Enable/disable caching. By default caching is disabled.
   if Rails.root.join('tmp/caching-dev.txt').exist?
     config.action_controller.perform_caching = true
