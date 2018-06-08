@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="Rails tdd_plur: development" uuid="58485a72-a4f3-4b54-bcd2-a9af30a572b3">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/tdd_plur_development</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Rails tdd_plur: test" uuid="2c416cea-9c20-4e85-9440-ae43570603c7">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/tdd_plur_test</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Rails tdd_plur: production" uuid="456b09e5-de17-44cd-ba7e-163a67265542">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/tdd_plur_production</jdbc-url>
+    </data-source>
+  </component>
+</project>
