@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5fb97078-0667-4f38-b52d-0ba2e8c8520f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/support/new_achievement_form.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/achievements_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/achievements_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/achievement.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/achievement.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spec/features/create_achievement_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/features/create_achievement_spec.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -92,7 +90,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/achievements_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="200">
@@ -149,8 +147,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/features/create_achievement_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="320">
+              <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/spec/support/new_achievement_form.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -192,9 +199,10 @@
         <option value="$PROJECT_DIR$/app/views/achievements/new.html.erb" />
         <option value="$PROJECT_DIR$/spec/models/achievement_spec.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/spec/features/create_achievement_spec.rb" />
         <option value="$PROJECT_DIR$/app/models/achievement.rb" />
         <option value="$PROJECT_DIR$/app/controllers/achievements_controller.rb" />
+        <option value="$PROJECT_DIR$/spec/features/create_achievement_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/support/new_achievement_form.rb" />
       </list>
     </option>
   </component>
@@ -227,6 +235,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="RailsProjectView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -309,8 +319,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="RailsProjectView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -448,7 +456,8 @@
       <updated>1528121307607</updated>
       <workItem from="1528121308912" duration="1938000" />
       <workItem from="1528377875817" duration="7279000" />
-      <workItem from="1528449718497" duration="469000" />
+      <workItem from="1528449718497" duration="1220000" />
+      <workItem from="1528470404554" duration="1870000" />
     </task>
     <task id="LOCAL-00001" summary="first test, with first controller and first view">
       <created>1528379624651</created>
@@ -464,17 +473,24 @@
       <option name="project" value="LOCAL" />
       <updated>1528384553766</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feature test with invalid data">
+      <created>1528450336029</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1528450336029</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9686000" />
+    <option name="totallyTimeSpent" value="12307000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1020" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18196371" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18409818" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -507,7 +523,8 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="first test, with first controller and first view" />
     <MESSAGE value="first feature test" />
-    <option name="LAST_COMMIT_MESSAGE" value="first feature test" />
+    <MESSAGE value="feature test with invalid data" />
+    <option name="LAST_COMMIT_MESSAGE" value="feature test with invalid data" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
@@ -583,13 +600,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="36" column="12" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/achievement.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
@@ -597,10 +607,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/features/create_achievement_spec.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="720">
+          <caret line="36" column="12" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -608,6 +618,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/features/create_achievement_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/support/new_achievement_form.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
         </state>
       </provider>
     </entry>
