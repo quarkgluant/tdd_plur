@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(version: 20180607143001) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "achievements", force: :cascade do |t|
+  create_table "achievements_steps", force: :cascade do |t|
     t.string "title"
     t.text "description"
     t.integer "privacy"
