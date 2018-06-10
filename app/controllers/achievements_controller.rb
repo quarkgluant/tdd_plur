@@ -18,7 +18,7 @@ class AchievementsController < ApplicationController
   end
 
   private
-  
+
   def achievement_params
     params.require(:achievement).permit(:title, :description, :privacy, :featured, :cover_image)
   end
