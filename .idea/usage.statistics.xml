@@ -7,10 +7,12 @@
           <entry key="Gemfile" value="15" />
           <entry key="erb" value="24" />
           <entry key="rb" value="366" />
+          <entry key="txt" value="29" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key="PLAIN_TEXT" value="29" />
           <entry key="RHTML" value="24" />
           <entry key="Ruby" value="381" />
         </counts>

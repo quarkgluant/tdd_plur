@@ -1,20 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5fb97078-0667-4f38-b52d-0ba2e8c8520f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/usage.statistics.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/achievements/show.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/features/achievement_page_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.generators" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.generators" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.rakeTasks" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/tdd_plur.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tdd_plur.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+    <list default="true" id="5fb97078-0667-4f38-b52d-0ba2e8c8520f" name="Default" comment="fisrt use of the FactoryBot">
       <change beforePath="$PROJECT_DIR$/app/controllers/achievements_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/achievements_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/factories/achievements.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/factories/achievements.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/features/create_achievement_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/features/create_achievement_spec.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -104,7 +92,7 @@
         <entry file="file://$PROJECT_DIR$/app/controllers/achievements_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="400">
-              <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
         </entry>
@@ -500,7 +488,7 @@
       <workItem from="1528449718497" duration="1220000" />
       <workItem from="1528470404554" duration="3684000" />
       <workItem from="1528569102688" duration="41000" />
-      <workItem from="1528569163943" duration="4523000" />
+      <workItem from="1528569163943" duration="4604000" />
     </task>
     <task id="LOCAL-00001" summary="first test, with first controller and first view">
       <created>1528379624651</created>
@@ -530,11 +518,18 @@
       <option name="project" value="LOCAL" />
       <updated>1528472363467</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fisrt use of the FactoryBot">
+      <created>1528639151504</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1528639151505</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18685000" />
+    <option name="totallyTimeSpent" value="18766000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1020" extended-state="6" />
@@ -575,7 +570,8 @@
     <MESSAGE value="first feature test" />
     <MESSAGE value="feature test with invalid data" />
     <MESSAGE value="refactorise feature test" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactorise feature test" />
+    <MESSAGE value="fisrt use of the FactoryBot" />
+    <option name="LAST_COMMIT_MESSAGE" value="fisrt use of the FactoryBot" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
@@ -703,7 +699,7 @@
     <entry file="file://$PROJECT_DIR$/app/controllers/achievements_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
-          <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
