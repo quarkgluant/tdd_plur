@@ -87,6 +87,7 @@
     <orderEntry type="library" scope="PROVIDED" name="rack (v2.0.5, RVM: ruby-2.5.1 [tdd_plur]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack-test (v1.0.0, RVM: ruby-2.5.1 [tdd_plur]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rails (v5.1.6, RVM: ruby-2.5.1 [tdd_plur]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rails-controller-testing (v1.0.2, RVM: ruby-2.5.1 [tdd_plur]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rails-dom-testing (v2.0.3, RVM: ruby-2.5.1 [tdd_plur]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rails-html-sanitizer (v1.0.4, RVM: ruby-2.5.1 [tdd_plur]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="railties (v5.1.6, RVM: ruby-2.5.1 [tdd_plur]) [gem]" level="application" />

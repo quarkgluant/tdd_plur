@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="Rails tdd_plur: cucumber">
+  <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.9">
+    <root id="1">
+      <ServerVersion>10.4</ServerVersion>
+    </root>
+    <database id="2" parent="1" name="acme">
+      <ObjectId>21068</ObjectId>
+    </database>
+    <database id="3" parent="1" name="ccdhdev">
+      <ObjectId>17963</ObjectId>
+    </database>
+    <database id="4" parent="1" name="ccdhtest">
+      <ObjectId>16386</ObjectId>
+    </database>
+    <database id="5" parent="1" name="postgres">
+      <ObjectId>13289</ObjectId>
+      <Comment>default administrative connection database</Comment>
+    </database>
+    <database id="6" parent="1" name="tdd_plur_development">
+      <ObjectId>21112</ObjectId>
+    </database>
+    <database id="7" parent="1" name="tdd_plur_test">
+      <ObjectId>21153</ObjectId>
+      <IntrospectionStateNumber>115</IntrospectionStateNumber>
+      <Current>1</Current>
+    </database>
+    <role id="8" parent="1" name="pg_monitor">
+      <ObjectId>3373</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="9" parent="1" name="pg_read_all_settings">
+      <ObjectId>3374</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="10" parent="1" name="pg_read_all_stats">
+      <ObjectId>3375</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="11" parent="1" name="pg_signal_backend">
+      <ObjectId>4200</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="12" parent="1" name="pg_stat_scan_tables">
+      <ObjectId>3377</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="13" parent="1" name="postgres">
+      <ObjectId>10</ObjectId>
+      <SuperRole>1</SuperRole>
+      <Inherit>1</Inherit>
+      <CreateRole>1</CreateRole>
+      <CreateDb>1</CreateDb>
+      <CanLogin>1</CanLogin>
+      <Replication>1</Replication>
+      <ConnectionLimit>-1</ConnectionLimit>
+      <BypassRls>1</BypassRls>
+    </role>
+    <role id="14" parent="1" name="quark">
+      <ObjectId>17961</ObjectId>
+      <Inherit>1</Inherit>
+      <CreateDb>1</CreateDb>
+      <CanLogin>1</CanLogin>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="15" parent="1" name="tepe">
+      <ObjectId>16384</ObjectId>
+      <Inherit>1</Inherit>
+      <CreateDb>1</CreateDb>
+      <CanLogin>1</CanLogin>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+  </database-model>
+</dataSource>
