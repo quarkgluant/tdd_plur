@@ -16,11 +16,27 @@ class AchievementsController < ApplicationController
     end
   end
 
-  def show
+  def edit
     @achievement = Achievement.find(params[:id])
   end
 
-  def edit
+  def update
+    @achievement = Achievement.find(params[:id])
+    if @achievement.update_attributes(achievement_params)
+      redirect_to achievement_path(@achievement)
+    else
+      render :edit
+    end
+    # render nothing: true
+  end
+
+  def destroy
+    Achievement.destroy(params[:id])
+    # @achievement.delete
+    redirect_to achievements_path
+  end
+
+  def show
     @achievement = Achievement.find(params[:id])
   end
 

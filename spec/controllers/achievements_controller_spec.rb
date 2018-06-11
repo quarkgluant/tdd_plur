@@ -28,6 +28,38 @@ describe AchievementsController do
     end
   end
 
+  describe "PUT update" do
+    let(:achievement) { FactoryBot.create(:public_achievement) }
+
+    context "valid data" do
+      let(:valid_data) { FactoryBot.attributes_for(:public_achievement, title: 'New Title') }
+
+      it "redirects to achievement#show" do
+        put :update, params: { id: achievement, achievement: valid_data }
+        expect(response).to redirect_to(achievement)
+      end
+      it "updates achievement in the database" do
+        put :update, params: { id: achievement, achievement: valid_data }
+        achievement.reload
+        expect(achievement.title).to eq('New Title')
+      end
+    end
+
+    context "invalid data" do
+      let(:invalid_data) { FactoryBot.attributes_for(:public_achievement, title: '', description: 'new') }
+
+      it "renders :edit template" do
+        put :update, params: { id: achievement, achievement: invalid_data }
+        expect(response).to render_template(:edit)
+      end
+      it "doesn't update achievement in the database" do
+        put :update, params: { id: achievement, achievement: invalid_data }
+        achievement.reload
+        expect(achievement.description).not_to eq('new')
+      end
+    end
+  end
+
   describe "GET new" do
     it "renders :new template" do
       get :new
@@ -77,6 +109,19 @@ describe AchievementsController do
           post :create, params: { achievement: invalid_data }
         end.not_to change(Achievement, :count)
       end
+    end
+  end
+
+  describe "DELETE destroy" do
+    let(:achievement) { FactoryBot.create(:public_achievement) }
+
+    it "redirects to achievments#index" do
+      delete :destroy, params: { id: achievement }
+      expect(response).to redirect_to(achievements_path)
+    end
+    it "deletes achievement from database" do
+      delete :destroy, params: { id: achievement }
+      expect(Achievement.exists?(achievement.id)).to be_falsy
     end
   end
 end
