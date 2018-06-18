@@ -2,27 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5fb97078-0667-4f38-b52d-0ba2e8c8520f" name="Default" comment="full controller's tests with Devise, with shared_examples">
-      <change afterPath="$PROJECT_DIR$/spec/support/login_form.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.generators" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.generators" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.rakeTasks" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2c416cea-9c20-4e85-9440-ae43570603c7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2c416cea-9c20-4e85-9440-ae43570603c7.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2c416cea-9c20-4e85-9440-ae43570603c7/storage_v2/_src_/database/tdd_plur_test.7WB8iw/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2c416cea-9c20-4e85-9440-ae43570603c7/storage_v2/_src_/database/tdd_plur_test.7WB8iw/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/58485a72-a4f3-4b54-bcd2-a9af30a572b3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/58485a72-a4f3-4b54-bcd2-a9af30a572b3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/58485a72-a4f3-4b54-bcd2-a9af30a572b3/storage_v2/_src_/database/tdd_plur_development.gPSG2g/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/58485a72-a4f3-4b54-bcd2-a9af30a572b3/storage_v2/_src_/database/tdd_plur_development.gPSG2g/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/tdd_plur.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tdd_plur.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/usage.statistics.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/usage.statistics.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/achievements_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/achievements_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/achievement.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/achievement.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/achievements/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/achievements/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/controllers/achievements_controller_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/controllers/achievements_controller_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/factories/achievements.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/factories/achievements.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/features/create_achievement_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/features/create_achievement_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/rails_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/rails_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/models/achievement_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/models/achievement_spec.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -161,40 +142,31 @@
     <session id="-492391818">
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="rb" value="310" />
-          <entry key="txt" value="62" />
+          <entry key="rb" value="990" />
+          <entry key="txt" value="63" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="62" />
-          <entry key="Ruby" value="310" />
+          <entry key="PLAIN_TEXT" value="63" />
+          <entry key="Ruby" value="990" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.actions.runAnything" />
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="rb" value="2" />
+          <entry key="rb" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Ruby" value="2" />
+          <entry key="Ruby" value="3" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gemfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/achievements_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
@@ -204,7 +176,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/features/create_achievement_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
@@ -231,11 +203,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/achievement.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="360">
+              <caret line="18" column="41" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/models/achievement_spec.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="500">
+              <caret line="25" column="47" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -307,7 +288,6 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/main.css.css" />
         <option value="$PROJECT_DIR$/app/views/welcome/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/achievement_controller.rb" />
-        <option value="$PROJECT_DIR$/spec/models/achievement_spec.rb" />
         <option value="$PROJECT_DIR$/spec/support/new_achievement_form.rb" />
         <option value="$PROJECT_DIR$/features/achievement_page.feature" />
         <option value="$PROJECT_DIR$/features/step_definitions/achievements_steps.rb" />
@@ -320,7 +300,6 @@
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/config/environments/test.rb" />
         <option value="$PROJECT_DIR$/spec/factories/users.rb" />
-        <option value="$PROJECT_DIR$/app/models/achievement.rb" />
         <option value="$PROJECT_DIR$/features/support/controller_macros.rb" />
         <option value="$PROJECT_DIR$/spec/support/controller_macros.rb" />
         <option value="$PROJECT_DIR$/spec/rails_helper.rb" />
@@ -333,6 +312,8 @@
         <option value="$PROJECT_DIR$/app/controllers/achievements_controller.rb" />
         <option value="$PROJECT_DIR$/spec/support/login_form.rb" />
         <option value="$PROJECT_DIR$/spec/features/create_achievement_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/models/achievement_spec.rb" />
+        <option value="$PROJECT_DIR$/app/models/achievement.rb" />
       </list>
     </option>
   </component>
@@ -683,7 +664,7 @@
       <workItem from="1529042455617" duration="5173000" />
       <workItem from="1529240573280" duration="16546000" />
       <workItem from="1529315493860" duration="66000" />
-      <workItem from="1529315581089" duration="3258000" />
+      <workItem from="1529315581089" duration="4624000" />
     </task>
     <task id="LOCAL-00001" summary="first test, with first controller and first view">
       <created>1528379624651</created>
@@ -776,14 +757,22 @@
       <option name="project" value="LOCAL" />
       <updated>1528800103025</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="full controller's tests with Devise, with shared_examples">
+      <created>1529321054702</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1529321054702</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73435000" />
+    <option name="totallyTimeSpent" value="74801000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1020" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2139808" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -830,7 +819,8 @@
     <MESSAGE value="controller test for index &amp; edit actions" />
     <MESSAGE value="install &amp; config Devise" />
     <MESSAGE value="Devise install files (add files that I forget)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Devise install files (add files that I forget)" />
+    <MESSAGE value="full controller's tests with Devise, with shared_examples" />
+    <option name="LAST_COMMIT_MESSAGE" value="full controller's tests with Devise, with shared_examples" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/main.css.css">
@@ -844,13 +834,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
           <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/models/achievement_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="58" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="58" />
         </state>
       </provider>
     </entry>
@@ -1036,13 +1019,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/achievement.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/controllers/achievements_controller_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1100">
@@ -1057,6 +1033,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/spec/features/create_achievement_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/spec/support/login_form.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -1064,10 +1047,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/features/create_achievement_spec.rb">
+    <entry file="file://$PROJECT_DIR$/spec/models/achievement_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+        <state relative-caret-position="500">
+          <caret line="25" column="47" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/achievement.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="18" column="41" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
         </state>
       </provider>
     </entry>
