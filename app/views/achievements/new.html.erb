@@ -1,7 +1,7 @@
 <%= simple_form_for @achievement do |f| %>
   <%= f.input :title %>
   <%= f.input :description %>
-  <%= f.input :privacy, collection: Hash[Achievement.privacies.map { |k, _|  [k.split('_').first.capitalize, k] }] %>
+  <%= f.input :privacy, collection: Hash[Achievement.privacies.map { |k, _|  [ k.split('_').first.capitalize, k ]}] %>
   <%= f.input :featured, label: 'Featured achievement' %>
   <%= f.input :cover_image, as: :file %>
 

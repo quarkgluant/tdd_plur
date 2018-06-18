@@ -84,8 +84,6 @@ test: &test
 production:
   <<: *default
   database: tdd_plur_production
-  username: tdd_plur
-  password: <%= ENV['TDD_PLUR_DATABASE_PASSWORD'] %>
 
 cucumber:
   <<: *test

@@ -4,37 +4,45 @@
     <session id="-492391818">
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Gemfile" value="153" />
-          <entry key="erb" value="90" />
+          <entry key="Gemfile" value="155" />
+          <entry key="Ruby Console" value="16" />
+          <entry key="cell" value="1" />
+          <entry key="erb" value="92" />
           <entry key="feature" value="286" />
-          <entry key="rb" value="3256" />
-          <entry key="txt" value="186" />
+          <entry key="rb" value="4248" />
+          <entry key="txt" value="257" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Cucumber" value="286" />
-          <entry key="PLAIN_TEXT" value="186" />
-          <entry key="RHTML" value="90" />
-          <entry key="Ruby" value="3409" />
+          <entry key="PLAIN_TEXT" value="257" />
+          <entry key="RHTML" value="92" />
+          <entry key="Ruby" value="4419" />
+          <entry key="Scratch" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.actions.runAnything" />
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="Gemfile" value="1" />
-          <entry key="achievements" value="1" />
-          <entry key="erb" value="5" />
-          <entry key="feature" value="1" />
-          <entry key="rb" value="11" />
+          <entry key="Gemfile" value="2" />
+          <entry key="achievements" value="4" />
+          <entry key="erb" value="7" />
+          <entry key="feature" value="2" />
+          <entry key="lock" value="1" />
+          <entry key="rb" value="24" />
+          <entry key="users" value="4" />
+          <entry key="yml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Cucumber" value="1" />
-          <entry key="Database Element" value="1" />
-          <entry key="RHTML" value="5" />
-          <entry key="Ruby" value="12" />
+          <entry key="Cucumber" value="2" />
+          <entry key="Database Element" value="8" />
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="RHTML" value="7" />
+          <entry key="Ruby" value="26" />
+          <entry key="YAML" value="1" />
         </counts>
       </usages-collector>
     </session>

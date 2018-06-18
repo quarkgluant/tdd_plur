@@ -21,7 +21,7 @@
       <ObjectId>21112</ObjectId>
     </database>
     <database id="7" parent="1" name="tdd_plur_test">
-      <ObjectId>21153</ObjectId>
+      <ObjectId>21247</ObjectId>
       <IntrospectionStateNumber>115</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
@@ -96,8 +96,8 @@
     <schema id="21" parent="7" name="public">
       <ObjectId>2200</ObjectId>
       <Comment>standard public schema</Comment>
-      <IntrospectionTimestamp>2018-06-10.23:26:17.660</IntrospectionTimestamp>
-      <IntrospectionStateNumber>33610</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2018-06-17.23:58:49.096</IntrospectionTimestamp>
+      <IntrospectionStateNumber>35371</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -144,143 +144,284 @@
       <Type>index</Type>
     </access-method>
     <sequence id="28" parent="21" name="achievements_id_seq">
-      <ObjectId>21154</ObjectId>
-      <StateNumber>33607</StateNumber>
+      <ObjectId>21248</ObjectId>
+      <StateNumber>35362</StateNumber>
       <SequenceIdentity>1</SequenceIdentity>
       <BelongsToColumn>1</BelongsToColumn>
       <CacheSize>1</CacheSize>
       <DataType>bigint</DataType>
     </sequence>
-    <table id="29" parent="21" name="achievements">
-      <ObjectId>21156</ObjectId>
-      <StateNumber>33607</StateNumber>
+    <sequence id="29" parent="21" name="users_id_seq">
+      <ObjectId>21260</ObjectId>
+      <StateNumber>35364</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <table id="30" parent="21" name="achievements">
+      <ObjectId>21250</ObjectId>
+      <StateNumber>35367</StateNumber>
     </table>
-    <table id="30" parent="21" name="ar_internal_metadata">
-      <ObjectId>21173</ObjectId>
-      <StateNumber>33610</StateNumber>
+    <table id="31" parent="21" name="ar_internal_metadata">
+      <ObjectId>21289</ObjectId>
+      <StateNumber>35371</StateNumber>
     </table>
-    <table id="31" parent="21" name="schema_migrations">
-      <ObjectId>21165</ObjectId>
-      <StateNumber>33608</StateNumber>
+    <table id="32" parent="21" name="schema_migrations">
+      <ObjectId>21281</ObjectId>
+      <StateNumber>35368</StateNumber>
     </table>
-    <column id="32" parent="29" name="id">
+    <table id="33" parent="21" name="users">
+      <ObjectId>21262</ObjectId>
+      <StateNumber>35367</StateNumber>
+    </table>
+    <column id="34" parent="30" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>33607</StateNumber>
+      <StateNumber>35362</StateNumber>
       <DefaultExpression>nextval(&apos;achievements_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
       <SequenceName>achievements_id_seq</SequenceName>
     </column>
-    <column id="33" parent="29" name="title">
+    <column id="35" parent="30" name="title">
       <Position>2</Position>
       <DataType>varchar|0s</DataType>
-      <StateNumber>33607</StateNumber>
+      <StateNumber>35362</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="34" parent="29" name="description">
+    <column id="36" parent="30" name="description">
       <Position>3</Position>
       <DataType>text|0s</DataType>
-      <StateNumber>33607</StateNumber>
+      <StateNumber>35362</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="35" parent="29" name="privacy">
+    <column id="37" parent="30" name="privacy">
       <Position>4</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>33607</StateNumber>
+      <StateNumber>35362</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="36" parent="29" name="featured">
+    <column id="38" parent="30" name="featured">
       <Position>5</Position>
       <DataType>boolean|0s</DataType>
-      <StateNumber>33607</StateNumber>
+      <StateNumber>35362</StateNumber>
       <TypeId>16</TypeId>
     </column>
-    <column id="37" parent="29" name="cover_image">
+    <column id="39" parent="30" name="cover_image">
       <Position>6</Position>
       <DataType>varchar|0s</DataType>
-      <StateNumber>33607</StateNumber>
+      <StateNumber>35362</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="38" parent="29" name="created_at">
+    <column id="40" parent="30" name="created_at">
       <Position>7</Position>
       <DataType>timestamp|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>33607</StateNumber>
+      <StateNumber>35362</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="39" parent="29" name="updated_at">
+    <column id="41" parent="30" name="updated_at">
       <Position>8</Position>
       <DataType>timestamp|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>33607</StateNumber>
+      <StateNumber>35362</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <index id="40" parent="29" name="achievements_pkey">
-      <ObjectId>21163</ObjectId>
+    <column id="42" parent="30" name="user_id">
+      <Position>9</Position>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>35362</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <index id="43" parent="30" name="achievements_pkey">
+      <ObjectId>21257</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="41" parent="29" name="achievements_pkey">
-      <ObjectId>21164</ObjectId>
+    <index id="44" parent="30" name="index_achievements_on_user_id">
+      <ObjectId>21259</ObjectId>
+      <ColNames>user_id</ColNames>
+    </index>
+    <key id="45" parent="30" name="achievements_pkey">
+      <ObjectId>21258</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>achievements_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="42" parent="30" name="key">
+    <foreign-key id="46" parent="30" name="fk_rails_651a652e8a">
+      <ObjectId>21276</ObjectId>
+      <ColNames>user_id</ColNames>
+      <RefTableId>21262</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>users</RefTableName>
+      <RefKeyName>users_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="47" parent="31" name="key">
       <Position>1</Position>
       <DataType>varchar|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>33610</StateNumber>
+      <StateNumber>35371</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="43" parent="30" name="value">
+    <column id="48" parent="31" name="value">
       <Position>2</Position>
       <DataType>varchar|0s</DataType>
-      <StateNumber>33610</StateNumber>
+      <StateNumber>35371</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="44" parent="30" name="created_at">
+    <column id="49" parent="31" name="created_at">
       <Position>3</Position>
       <DataType>timestamp|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>33610</StateNumber>
+      <StateNumber>35371</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="45" parent="30" name="updated_at">
+    <column id="50" parent="31" name="updated_at">
       <Position>4</Position>
       <DataType>timestamp|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>33610</StateNumber>
+      <StateNumber>35371</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <index id="46" parent="30" name="ar_internal_metadata_pkey">
-      <ObjectId>21179</ObjectId>
+    <index id="51" parent="31" name="ar_internal_metadata_pkey">
+      <ObjectId>21295</ObjectId>
       <ColNames>key</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="47" parent="30" name="ar_internal_metadata_pkey">
-      <ObjectId>21180</ObjectId>
+    <key id="52" parent="31" name="ar_internal_metadata_pkey">
+      <ObjectId>21296</ObjectId>
       <ColNames>key</ColNames>
       <UnderlyingIndexName>ar_internal_metadata_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="48" parent="31" name="version">
+    <column id="53" parent="32" name="version">
       <Position>1</Position>
       <DataType>varchar|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>33608</StateNumber>
+      <StateNumber>35368</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="49" parent="31" name="schema_migrations_pkey">
-      <ObjectId>21171</ObjectId>
+    <index id="54" parent="32" name="schema_migrations_pkey">
+      <ObjectId>21287</ObjectId>
       <ColNames>version</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="50" parent="31" name="schema_migrations_pkey">
-      <ObjectId>21172</ObjectId>
+    <key id="55" parent="32" name="schema_migrations_pkey">
+      <ObjectId>21288</ObjectId>
       <ColNames>version</ColNames>
       <UnderlyingIndexName>schema_migrations_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="56" parent="33" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>35364</StateNumber>
+      <DefaultExpression>nextval(&apos;users_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>20</TypeId>
+      <SequenceName>users_id_seq</SequenceName>
+    </column>
+    <column id="57" parent="33" name="email">
+      <Position>2</Position>
+      <DataType>varchar|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>35364</StateNumber>
+      <DefaultExpression>&apos;&apos;::character varying</DefaultExpression>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="58" parent="33" name="encrypted_password">
+      <Position>3</Position>
+      <DataType>varchar|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>35364</StateNumber>
+      <DefaultExpression>&apos;&apos;::character varying</DefaultExpression>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="59" parent="33" name="reset_password_token">
+      <Position>4</Position>
+      <DataType>varchar|0s</DataType>
+      <StateNumber>35364</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="60" parent="33" name="reset_password_sent_at">
+      <Position>5</Position>
+      <DataType>timestamp|0s</DataType>
+      <StateNumber>35364</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="61" parent="33" name="remember_created_at">
+      <Position>6</Position>
+      <DataType>timestamp|0s</DataType>
+      <StateNumber>35364</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="62" parent="33" name="sign_in_count">
+      <Position>7</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>35364</StateNumber>
+      <DefaultExpression>0</DefaultExpression>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="63" parent="33" name="current_sign_in_at">
+      <Position>8</Position>
+      <DataType>timestamp|0s</DataType>
+      <StateNumber>35364</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="64" parent="33" name="last_sign_in_at">
+      <Position>9</Position>
+      <DataType>timestamp|0s</DataType>
+      <StateNumber>35364</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="65" parent="33" name="current_sign_in_ip">
+      <Position>10</Position>
+      <DataType>inet|0s</DataType>
+      <StateNumber>35364</StateNumber>
+      <TypeId>869</TypeId>
+    </column>
+    <column id="66" parent="33" name="last_sign_in_ip">
+      <Position>11</Position>
+      <DataType>inet|0s</DataType>
+      <StateNumber>35364</StateNumber>
+      <TypeId>869</TypeId>
+    </column>
+    <column id="67" parent="33" name="created_at">
+      <Position>12</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>35364</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="68" parent="33" name="updated_at">
+      <Position>13</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>35364</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <index id="69" parent="33" name="users_pkey">
+      <ObjectId>21272</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="70" parent="33" name="index_users_on_email">
+      <ObjectId>21274</ObjectId>
+      <ColNames>email</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="71" parent="33" name="index_users_on_reset_password_token">
+      <ObjectId>21275</ObjectId>
+      <ColNames>reset_password_token</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="72" parent="33" name="users_pkey">
+      <ObjectId>21273</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>users_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
   </database-model>
