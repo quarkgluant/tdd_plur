@@ -14,6 +14,14 @@ class Achievement < ApplicationRecord
   def description_html
     Redcarpet::Markdown.new(Redcarpet::Render::HTML).render(description)
   end
+
+  def silly_title
+    "#{title} by #{user.email}"
+  end
+
+  def self.by_letter(letter)
+    includes(:user).where("title LIKE ?", "#{letter}%").order('users.email')
+  end
   #
   # private
   #
