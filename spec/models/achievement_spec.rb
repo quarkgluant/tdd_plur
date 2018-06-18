@@ -25,4 +25,19 @@ RSpec.describe Achievement, type: :model do
     new_achievement = Achievement.new(title: 'First Achievement', user: user2)
     expect(new_achievement.valid?).to be_truthy
   end
+
+  it 'belongs to user' do
+    achievement = Achievement.new(title: 'some title', user: nil)
+    expect(achievement.valid?).to be_falsy
+  end
+
+  it 'has belongs_to user association' do
+    #   first approach
+    user = FactoryBot.create(:user)
+    achievement = Achievement.new(title: 'some title', user: user)
+    expect(achievement.user).to eq(user)
+    #   second approach
+    u = Achievement.reflect_on_association(:user)
+    expect(u.macro).to eq(:belongs_to)
+  end
 end
