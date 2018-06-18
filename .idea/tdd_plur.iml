@@ -108,6 +108,7 @@
     <orderEntry type="library" scope="PROVIDED" name="sass (v3.5.6, RVM: ruby-2.5.1 [tdd_plur]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sass-listen (v4.0.0, RVM: ruby-2.5.1 [tdd_plur]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sass-rails (v5.0.7, RVM: ruby-2.5.1 [tdd_plur]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="shoulda-matchers (v3.1.2@4b160b, RVM: ruby-2.5.1 [tdd_plur]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="simple_form (v4.0.1, RVM: ruby-2.5.1 [tdd_plur]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="spring (v2.0.2, RVM: ruby-2.5.1 [tdd_plur]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="spring-commands-cucumber (v1.0.1, RVM: ruby-2.5.1 [tdd_plur]) [gem]" level="application" />
