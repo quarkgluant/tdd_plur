@@ -1,0 +1,22 @@
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Privacy</th>
+    <th>featured</th>
+    <th>Cover Image</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @achievements.each do |achievement| %>
+    <tr>
+      <td><%= achievement.title %></td>
+      <td><%= achievement.description %></td>
+      <td><%= achievement.privacy %></td>
+      <td><%= achievement.featured %></td>
+      <td><%= image_tag achievement.cover_image %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>

@@ -1,0 +1,28 @@
+do /home/quark/.rvm/rubies/ruby-2.5.1/bin/ruby /home/quark/RubymineProjects/tdd_plur/bin/rake routes --trace 
+Ruby enVironment Manager 1.29.4 (master) (c) 2009-2017 Michal Papis, Piotr Kuczynski, Wayne E. Seguin
+
+                  Prefix Verb   URI Pattern                      Controller#Action
+        new_user_session GET    /users/sign_in(.:format)         devise/sessions#new
+            user_session POST   /users/sign_in(.:format)         devise/sessions#create
+    destroy_user_session DELETE /users/sign_out(.:format)        devise/sessions#destroy
+       new_user_password GET    /users/password/new(.:format)    devise/passwords#new
+      edit_user_password GET    /users/password/edit(.:format)   devise/passwords#edit
+           user_password PATCH  /users/password(.:format)        devise/passwords#update
+                         PUT    /users/password(.:format)        devise/passwords#update
+                         POST   /users/password(.:format)        devise/passwords#create
+cancel_user_registration GET    /users/cancel(.:format)          devise/registrations#cancel
+   new_user_registration GET    /users/sign_up(.:format)         devise/registrations#new
+  edit_user_registration GET    /users/edit(.:format)            devise/registrations#edit
+       user_registration PATCH  /users(.:format)                 devise/registrations#update
+                         PUT    /users(.:format)                 devise/registrations#update
+                         DELETE /users(.:format)                 devise/registrations#destroy
+                         POST   /users(.:format)                 devise/registrations#create
+            achievements GET    /achievements(.:format)          achievements#index
+                         POST   /achievements(.:format)          achievements#create
+         new_achievement GET    /achievements/new(.:format)      achievements#new
+        edit_achievement GET    /achievements/:id/edit(.:format) achievements#edit
+             achievement GET    /achievements/:id(.:format)      achievements#show
+                         PATCH  /achievements/:id(.:format)      achievements#update
+                         PUT    /achievements/:id(.:format)      achievements#update
+                         DELETE /achievements/:id(.:format)      achievements#destroy
+                    root GET    /                                welcome#index

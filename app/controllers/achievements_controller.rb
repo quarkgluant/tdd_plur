@@ -4,6 +4,7 @@ class AchievementsController < ApplicationController
 
   def index
     @achievements = Achievement.public_access
+    # @achievements = Achievement.get_public_achievements
   end
 
   def new
@@ -14,10 +15,18 @@ class AchievementsController < ApplicationController
     @achievement = Achievement.new(achievement_params)
     @achievement.user = current_user
     if @achievement.save
+      UserMailer.achievement_created(current_user.email, @achievement.id).deliver_now
       redirect_to achievement_url(@achievement), notice: 'Achievement has been created'
     else
       render :new
     end
+    # service = CreateAchievement.new(achievement_params, current_user)
+    # service.create
+    # if service.created?
+    #   redirect_to achievement_path(@achievement)
+    # else
+    #   render :edit
+    # end
   end
 
   def edit
